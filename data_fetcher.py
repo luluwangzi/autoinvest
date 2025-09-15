@@ -482,14 +482,29 @@ class DataFetcher:
         if option_data.empty:
             return option_data
         
+        # 确保必要的字段存在
+        required_fields = ['strike_price', 'option_price', 'dte']
+        for field in required_fields:
+            if field not in option_data.columns:
+                if field == 'dte':
+                    # 如果没有dte字段，设置默认值30天
+                    option_data[field] = 30
+                else:
+                    # 其他必要字段缺失，返回空DataFrame
+                    return pd.DataFrame()
+        
         # 移除无效数据
-        option_data = option_data.dropna(subset=['strike_price', 'option_price'])
+        option_data = option_data.dropna(subset=['strike_price', 'option_price', 'dte'])
         
         # 移除价格为0的期权
         option_data = option_data[option_data['option_price'] > 0]
         
-        # 移除成交量过低的期权
-        option_data = option_data[option_data['volume'] >= 1]
+        # 移除成交量过低的期权（如果volume字段存在）
+        if 'volume' in option_data.columns:
+            option_data = option_data[option_data['volume'] >= 1]
+        else:
+            # 如果没有volume字段，添加默认值
+            option_data['volume'] = 100
         
         # 修复隐含波动率异常值
         if 'implied_volatility' in option_data.columns:
@@ -497,15 +512,22 @@ class DataFetcher:
             option_data = option_data[option_data['implied_volatility'] <= 5.0]
             # 填充缺失的IV值
             option_data['implied_volatility'] = option_data['implied_volatility'].fillna(0.3)
+        else:
+            # 如果没有IV字段，添加默认值
+            option_data['implied_volatility'] = 0.3
         
         # 确保数据类型正确
         numeric_columns = ['strike_price', 'option_price', 'bid_price', 'ask_price', 
-                          'volume', 'open_interest', 'implied_volatility']
+                          'volume', 'open_interest', 'implied_volatility', 'dte']
         for col in numeric_columns:
             if col in option_data.columns:
                 option_data[col] = pd.to_numeric(option_data[col], errors='coerce')
         
-        return option_data.dropna(subset=['strike_price', 'option_price'])
+        # 确保dte字段是整数
+        if 'dte' in option_data.columns:
+            option_data['dte'] = option_data['dte'].astype(int)
+        
+        return option_data.dropna(subset=['strike_price', 'option_price', 'dte'])
 
 
 # 创建全局数据获取器实例

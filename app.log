@@ -118,3 +118,27 @@
 2025-09-15 18:55:19,854 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
 2025-09-15 18:55:19,854 - utils - INFO - Using mock data for AAPL
 2025-09-15 18:55:19,855 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:02:46,051 - utils - WARNING - Rate limited, waiting 3.0s before retry 1/2
+2025-09-15 19:02:49,154 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:02:49,155 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:02:50,147 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:02:50,147 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:02:50,148 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:02:51,145 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:02:54,351 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:02:54,351 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:02:55,337 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:02:55,338 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:02:55,339 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:03:26,291 - utils - WARNING - Rate limited, waiting 3.0s before retry 1/2
+2025-09-15 19:03:29,999 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:03:29,999 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:03:31,293 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:03:31,293 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:03:31,295 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:03:56,204 - utils - WARNING - Rate limited, waiting 3.2s before retry 1/2
+2025-09-15 19:04:00,372 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:04:00,372 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:04:01,397 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:04:01,397 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:04:01,400 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
