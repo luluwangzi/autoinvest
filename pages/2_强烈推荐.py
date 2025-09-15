@@ -144,11 +144,15 @@ def main():
                 
                 # 计算期权指标
                 for _, option in puts_df.iterrows():
+                    # 检查必要字段是否存在
+                    if 'dte' not in option or pd.isna(option['dte']):
+                        continue
+                    
                     # 准备期权数据
                     option_data = {
                         'current_price': stock_info['current_price'],
                         'strike_price': option['strike_price'],
-                        'dte': option['dte'],
+                        'dte': int(option['dte']),  # 确保是整数
                         'option_price': option['option_price'],
                         'option_type': 'put'
                     }
@@ -162,11 +166,13 @@ def main():
                         'stock_name': stock_info['name'],
                         'current_price': stock_info['current_price'],
                         'sector': stock_info['sector'],
-                        'expiration_date': option['expiration_date'],
-                        'volume': option['volume'],
-                        'open_interest': option['open_interest'],
-                        'bid_price': option['bid_price'],
-                        'ask_price': option['ask_price']
+                        'expiration_date': option.get('expiration_date', ''),
+                        'volume': option.get('volume', 0),
+                        'open_interest': option.get('open_interest', 0),
+                        'bid_price': option.get('bid_price', 0),
+                        'ask_price': option.get('ask_price', 0),
+                        'dte': int(option['dte']),  # 确保dte字段被添加
+                        'strike_price': option['strike_price']  # 确保strike_price字段被添加
                     })
                     
                     all_results.append(analysis)

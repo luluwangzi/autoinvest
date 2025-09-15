@@ -235,7 +235,6 @@ def main():
                 available_columns = []
                 column_mapping = {
                     'strike_price': '行权价',
-                    'option_price': '期权价格', 
                     'annualized_return': '年化收益率',
                     'assignment_probability': '被指派概率',
                     'dte': '到期天数',
@@ -264,8 +263,6 @@ def main():
                     display_df['年化收益率'] = display_df['年化收益率'].apply(lambda x: f"{x:.1%}")
                 if '被指派概率' in display_df.columns:
                     display_df['被指派概率'] = display_df['被指派概率'].apply(lambda x: f"{x:.1%}")
-                if '期权价格' in display_df.columns:
-                    display_df['期权价格'] = display_df['期权价格'].apply(lambda x: f"${x:.2f}")
                 if '盈亏平衡价' in display_df.columns:
                     display_df['盈亏平衡价'] = display_df['盈亏平衡价'].apply(lambda x: f"${x:.2f}")
                 
@@ -284,7 +281,7 @@ def main():
                         y='annualized_return',
                         size='volume',
                         color='dte',
-                        hover_data=['strike_price', 'option_price'],
+                        hover_data=['strike_price', 'dte', 'volume'],
                         title="年化收益率 vs 被指派概率",
                         labels={
                             'assignment_probability': '被指派概率',
