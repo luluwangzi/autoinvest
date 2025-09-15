@@ -243,31 +243,31 @@ def main():
         top_options = filtered_df.head(10)
         
         for i, (_, option) in enumerate(top_options.iterrows()):
-            with st.expander(f"🥇 推荐 #{i+1}: {option['symbol']} {option['strike_price']:.1f} PUT (年化收益: {option['annualized_return']:.1%})"):
+            with st.expander(f"🥇 推荐 #{i+1}: {option.get('symbol', 'N/A')} {option.get('strike_price', 0):.1f} PUT (年化收益: {option.get('annualized_return', 0):.1%})"):
                 col1, col2, col3, col4 = st.columns(4)
                 
                 with col1:
-                    st.metric("股票", option['symbol'])
-                    st.metric("当前价格", f"${option['current_price']:.2f}")
-                    st.metric("行权价", f"${option['strike_price']:.1f}")
+                    st.metric("股票", option.get('symbol', 'N/A'))
+                    st.metric("当前价格", f"${option.get('current_price', 0):.2f}")
+                    st.metric("行权价", f"${option.get('strike_price', 0):.1f}")
                 
                 with col2:
-                    st.metric("年化收益率", f"{option['annualized_return']:.1%}")
-                    st.metric("被指派概率", f"{option['assignment_probability']:.1%}")
-                    st.metric("到期天数", f"{option['dte']} 天")
+                    st.metric("年化收益率", f"{option.get('annualized_return', 0):.1%}")
+                    st.metric("被指派概率", f"{option.get('assignment_probability', 0):.1%}")
+                    st.metric("到期天数", f"{option.get('dte', 0)} 天")
                 
                 with col3:
-                    st.metric("期权价格", f"${option['option_price']:.2f}")
-                    st.metric("盈亏平衡价", f"${option['breakeven_price']:.2f}")
-                    st.metric("成交量", f"{option['volume']:,}")
+                    st.metric("期权价格", f"${option.get('option_price', 0):.2f}")
+                    st.metric("盈亏平衡价", f"${option.get('breakeven_price', 0):.2f}")
+                    st.metric("成交量", f"{option.get('volume', 0):,}")
                 
                 with col4:
-                    st.metric("Delta", f"{option['delta']:.3f}")
-                    st.metric("Gamma", f"{option['gamma']:.4f}")
-                    st.metric("Theta", f"{option['theta']:.4f}")
+                    st.metric("Delta", f"{option.get('delta', 0):.3f}")
+                    st.metric("Gamma", f"{option.get('gamma', 0):.4f}")
+                    st.metric("Theta", f"{option.get('theta', 0):.4f}")
                 
                 # 风险评级
-                risk_score = option['assignment_probability'] * 100
+                risk_score = option.get('assignment_probability', 0) * 100
                 if risk_score < 20:
                     st.success("🟢 低风险")
                 elif risk_score < 35:
