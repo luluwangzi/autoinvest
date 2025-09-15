@@ -37,10 +37,10 @@ def main():
         # 股票数量选择
         max_stocks = st.slider(
             "分析股票数量",
-            min_value=10,
-            max_value=100,
-            value=50,
-            help="选择要分析的纳斯达克100成分股数量"
+            min_value=5,
+            max_value=20,
+            value=10,
+            help="选择要分析的纳斯达克100成分股数量（建议不超过20以避免API限制）"
         )
         
         # 筛选条件
@@ -109,6 +109,9 @@ def main():
         status_text.text("📋 获取纳斯达克100成分股...")
         nasdaq_symbols = data_fetcher.get_nasdaq100_symbols()
         selected_symbols = nasdaq_symbols[:max_stocks]
+        
+        # 显示API限制提示
+        st.info("ℹ️ 由于Yahoo Finance API限制，部分数据可能使用模拟数据。建议减少分析股票数量以获得更好的体验。")
         
         progress_bar.progress(0.1)
         

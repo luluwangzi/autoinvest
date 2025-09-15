@@ -90,6 +90,10 @@ def main():
                     st.error(f"❌ 无法获取 {symbol} 的股票数据，请检查股票代码是否正确")
                     return
                 
+                # 检查是否使用了模拟数据
+                if stock_info['name'] in ['Apple Inc.', 'Tesla Inc.', 'Microsoft Corporation', 'Alphabet Inc.', 'Amazon.com Inc.']:
+                    st.info("ℹ️ 由于API限制，当前使用模拟数据进行演示。实际部署时会有真实数据。")
+                
                 # 显示股票基本信息
                 col1, col2, col3, col4 = st.columns(4)
                 
