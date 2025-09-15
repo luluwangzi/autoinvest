@@ -1,4 +1,1 @@
-# Streamlit Cloud 依赖包文件
-# 这个文件用于指定系统级别的依赖包
-
 watchdog
