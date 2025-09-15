@@ -213,42 +213,61 @@ def main():
                             st.metric("到期天数", f"{option['dte']} 天")
                         
                         with col2:
-                            st.metric("期权价格", f"${option['option_price']:.2f}")
-                            st.metric("盈亏平衡价", f"${option['breakeven_price']:.2f}")
-                            st.metric("最大盈利", f"${option['max_profit']:.2f}")
+                            st.metric("期权价格", f"${option.get('option_price', 0):.2f}")
+                            st.metric("盈亏平衡价", f"${option.get('breakeven_price', 0):.2f}")
+                            st.metric("最大盈利", f"${option.get('max_profit', 0):.2f}")
                         
                         with col3:
-                            st.metric("Delta", f"{option['delta']:.3f}")
-                            st.metric("Gamma", f"{option['gamma']:.4f}")
-                            st.metric("Theta", f"{option['theta']:.4f}")
+                            st.metric("Delta", f"{option.get('delta', 0):.3f}")
+                            st.metric("Gamma", f"{option.get('gamma', 0):.4f}")
+                            st.metric("Theta", f"{option.get('theta', 0):.4f}")
                         
                         # 风险提示
-                        if option['assignment_probability'] > 0.3:
+                        if option.get('assignment_probability', 0) > 0.3:
                             st.warning("⚠️ 被指派概率较高，请注意风险")
-                        if option['annualized_return'] > 1.0:
+                        if option.get('annualized_return', 0) > 1.0:
                             st.info("💡 年化收益率很高，请仔细评估风险")
                 
                 # 显示详细数据表
                 st.subheader("📊 详细数据")
                 
-                # 选择显示的列
-                display_columns = [
-                    'strike_price', 'option_price', 'annualized_return', 
-                    'assignment_probability', 'dte', 'volume', 'open_interest',
-                    'delta', 'gamma', 'theta', 'breakeven_price'
-                ]
+                # 选择显示的列（只选择存在的列）
+                available_columns = []
+                column_mapping = {
+                    'strike_price': '行权价',
+                    'option_price': '期权价格', 
+                    'annualized_return': '年化收益率',
+                    'assignment_probability': '被指派概率',
+                    'dte': '到期天数',
+                    'volume': '成交量',
+                    'open_interest': '持仓量',
+                    'delta': 'Delta',
+                    'gamma': 'Gamma',
+                    'theta': 'Theta',
+                    'breakeven_price': '盈亏平衡价'
+                }
                 
-                display_df = filtered_df[display_columns].copy()
-                display_df.columns = [
-                    '行权价', '期权价格', '年化收益率', '被指派概率', '到期天数',
-                    '成交量', '持仓量', 'Delta', 'Gamma', 'Theta', '盈亏平衡价'
-                ]
+                # 只选择存在的列
+                for col in column_mapping.keys():
+                    if col in filtered_df.columns:
+                        available_columns.append(col)
                 
-                # 格式化数值
-                display_df['年化收益率'] = display_df['年化收益率'].apply(lambda x: f"{x:.1%}")
-                display_df['被指派概率'] = display_df['被指派概率'].apply(lambda x: f"{x:.1%}")
-                display_df['期权价格'] = display_df['期权价格'].apply(lambda x: f"${x:.2f}")
-                display_df['盈亏平衡价'] = display_df['盈亏平衡价'].apply(lambda x: f"${x:.2f}")
+                if available_columns:
+                    display_df = filtered_df[available_columns].copy()
+                    display_df.columns = [column_mapping[col] for col in available_columns]
+                else:
+                    st.warning("⚠️ 没有可显示的数据列")
+                    return
+                
+                # 格式化数值（只格式化存在的列）
+                if '年化收益率' in display_df.columns:
+                    display_df['年化收益率'] = display_df['年化收益率'].apply(lambda x: f"{x:.1%}")
+                if '被指派概率' in display_df.columns:
+                    display_df['被指派概率'] = display_df['被指派概率'].apply(lambda x: f"{x:.1%}")
+                if '期权价格' in display_df.columns:
+                    display_df['期权价格'] = display_df['期权价格'].apply(lambda x: f"${x:.2f}")
+                if '盈亏平衡价' in display_df.columns:
+                    display_df['盈亏平衡价'] = display_df['盈亏平衡价'].apply(lambda x: f"${x:.2f}")
                 
                 st.dataframe(display_df, use_container_width=True)
                 

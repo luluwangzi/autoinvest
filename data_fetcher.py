@@ -369,20 +369,14 @@ class DataFetcher:
                 if not options_data['calls'].empty:
                     options_data['calls'] = options_data['calls'][options_data['calls']['dte'] <= max_dte]
                 
-                results[symbol] = {
-                    'stock_info': stock_info,
-                    'options': options_data
-                }
+                results[symbol] = options_data
                 
                 # 添加延迟避免请求过于频繁
                 time.sleep(2.0)  # 增加延迟到2秒
                 
             except Exception as e:
                 print(f"Error processing {symbol}: {e}")
-                results[symbol] = {
-                    'stock_info': {'symbol': symbol, 'current_price': 0, 'name': symbol},
-                    'options': {'calls': pd.DataFrame(), 'puts': pd.DataFrame()}
-                }
+                results[symbol] = {'calls': pd.DataFrame(), 'puts': pd.DataFrame()}
         
         return results
     

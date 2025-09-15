@@ -132,7 +132,7 @@ def main():
                 # 获取期权链数据
                 options_data = data_fetcher.get_options_chain(symbol)
                 
-                if options_data['puts'].empty:
+                if 'puts' not in options_data or options_data['puts'].empty:
                     continue
                 
                 # 分析Put期权

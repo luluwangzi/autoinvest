@@ -142,3 +142,171 @@
 2025-09-15 19:04:01,397 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
 2025-09-15 19:04:01,397 - utils - INFO - Using mock data for AAPL
 2025-09-15 19:04:01,400 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:16:04,341 - utils - WARNING - Rate limited, waiting 3.2s before retry 1/2
+2025-09-15 19:16:07,621 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:16:07,622 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:16:08,627 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:16:08,627 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:16:08,629 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:17:32,886 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:17:36,749 - utils - ERROR - Error fetching stock info for AAPL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AAPL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:17:36,749 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:17:37,748 - utils - ERROR - Error fetching options chain for AAPL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:17:37,748 - utils - INFO - Using mock data for AAPL
+2025-09-15 19:17:37,750 - utils - INFO - Generated mock options data for AAPL: 10 calls, 10 puts
+2025-09-15 19:17:43,749 - utils - WARNING - Rate limited, waiting 3.9s before retry 1/2
+2025-09-15 19:17:47,687 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:17:47,688 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:17:48,710 - utils - ERROR - Error fetching options chain for ADBE: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:17:48,711 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:17:48,713 - utils - INFO - Generated mock options data for ADBE: 10 calls, 10 puts
+2025-09-15 19:17:50,845 - utils - WARNING - Rate limited, waiting 4.0s before retry 1/2
+2025-09-15 19:17:55,800 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:17:56,802 - utils - ERROR - Error fetching options chain for AMD: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:17:58,870 - utils - WARNING - Rate limited, waiting 4.0s before retry 1/2
+2025-09-15 19:18:02,931 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:18:03,938 - utils - ERROR - Error fetching options chain for ABNB: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:18:05,985 - utils - WARNING - Rate limited, waiting 3.9s before retry 1/2
+2025-09-15 19:18:09,938 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:18:09,938 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:18:10,932 - utils - ERROR - Error fetching options chain for GOOGL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:18:10,932 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:18:10,934 - utils - INFO - Generated mock options data for GOOGL: 10 calls, 10 puts
+2025-09-15 19:18:12,982 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:18:16,636 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:18:17,621 - utils - ERROR - Error fetching options chain for GOOG: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:18:19,685 - utils - WARNING - Rate limited, waiting 3.5s before retry 1/2
+2025-09-15 19:18:23,269 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:18:23,269 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:18:50,816 - utils - WARNING - Rate limited, waiting 3.2s before retry 1/2
+2025-09-15 19:18:54,800 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:18:54,801 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:18:55,067 - utils - ERROR - Error fetching options chain for ADBE: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:18:55,068 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:18:55,070 - utils - INFO - Generated mock options data for ADBE: 10 calls, 10 puts
+2025-09-15 19:18:57,137 - utils - WARNING - Rate limited, waiting 3.7s before retry 1/2
+2025-09-15 19:19:00,895 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:01,894 - utils - ERROR - Error fetching options chain for AMD: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:19:03,949 - utils - WARNING - Rate limited, waiting 3.3s before retry 1/2
+2025-09-15 19:19:07,325 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:08,331 - utils - ERROR - Error fetching options chain for ABNB: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:19:10,393 - utils - WARNING - Rate limited, waiting 3.2s before retry 1/2
+2025-09-15 19:19:13,674 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:13,674 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:19:14,685 - utils - ERROR - Error fetching options chain for GOOGL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:19:14,685 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:19:14,687 - utils - INFO - Generated mock options data for GOOGL: 10 calls, 10 puts
+2025-09-15 19:19:16,759 - utils - WARNING - Rate limited, waiting 3.7s before retry 1/2
+2025-09-15 19:19:20,512 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:21,526 - utils - ERROR - Error fetching options chain for GOOG: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:19:23,589 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:19:26,694 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:26,694 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:19:27,713 - utils - WARNING - Rate limited, waiting 4.0s before retry 1/2
+2025-09-15 19:19:31,722 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:32,728 - utils - WARNING - Rate limited, waiting 3.3s before retry 1/2
+2025-09-15 19:19:36,082 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:37,087 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:19:40,912 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:19:40,913 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:19:41,915 - utils - WARNING - Rate limited, waiting 3.3s before retry 1/2
+2025-09-15 19:19:45,237 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:18,918 - utils - WARNING - Rate limited, waiting 3.0s before retry 1/2
+2025-09-15 19:20:21,975 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:21,975 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:20:22,982 - utils - ERROR - Error fetching options chain for ADBE: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:20:22,983 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:20:22,985 - utils - INFO - Generated mock options data for ADBE: 10 calls, 10 puts
+2025-09-15 19:20:25,049 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:20:28,658 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:29,655 - utils - ERROR - Error fetching options chain for AMD: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:20:31,718 - utils - WARNING - Rate limited, waiting 3.7s before retry 1/2
+2025-09-15 19:20:35,452 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:36,449 - utils - ERROR - Error fetching options chain for ABNB: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:20:38,507 - utils - WARNING - Rate limited, waiting 3.7s before retry 1/2
+2025-09-15 19:20:42,298 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:42,299 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:20:43,305 - utils - ERROR - Error fetching options chain for GOOGL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:20:43,305 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:20:43,306 - utils - INFO - Generated mock options data for GOOGL: 10 calls, 10 puts
+2025-09-15 19:20:45,362 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:20:49,054 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:50,053 - utils - ERROR - Error fetching options chain for GOOG: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:20:52,102 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:20:55,931 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:20:55,931 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:20:56,939 - utils - WARNING - Rate limited, waiting 3.9s before retry 1/2
+2025-09-15 19:21:00,849 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:01,880 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:21:05,762 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:06,763 - utils - WARNING - Rate limited, waiting 4.0s before retry 1/2
+2025-09-15 19:21:10,812 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:10,813 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:21:11,837 - utils - WARNING - Rate limited, waiting 3.5s before retry 1/2
+2025-09-15 19:21:15,450 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:35,265 - utils - WARNING - Rate limited, waiting 3.7s before retry 1/2
+2025-09-15 19:21:38,974 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:38,974 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:21:39,979 - utils - ERROR - Error fetching options chain for ADBE: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:21:39,979 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:21:39,980 - utils - INFO - Generated mock options data for ADBE: 10 calls, 10 puts
+2025-09-15 19:21:42,029 - utils - WARNING - Rate limited, waiting 3.9s before retry 1/2
+2025-09-15 19:21:46,008 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:47,017 - utils - ERROR - Error fetching options chain for AMD: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:21:49,055 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:21:52,218 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:53,239 - utils - ERROR - Error fetching options chain for ABNB: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:21:55,292 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:21:59,177 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:21:59,177 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:22:00,188 - utils - ERROR - Error fetching options chain for GOOGL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:22:00,188 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:22:00,189 - utils - INFO - Generated mock options data for GOOGL: 10 calls, 10 puts
+2025-09-15 19:22:02,338 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:22:06,182 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:07,200 - utils - ERROR - Error fetching options chain for GOOG: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:22:09,269 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:22:12,954 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:12,955 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:22:13,960 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:22:17,053 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:18,075 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:22:21,276 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:22,284 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:22:25,615 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:25,616 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:22:26,428 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:22:30,090 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:43,927 - utils - WARNING - Rate limited, waiting 3.1s before retry 1/2
+2025-09-15 19:22:47,100 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:47,100 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:22:48,118 - utils - ERROR - Error fetching options chain for ADBE: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:22:48,118 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:22:48,119 - utils - INFO - Generated mock options data for ADBE: 10 calls, 10 puts
+2025-09-15 19:22:50,165 - utils - WARNING - Rate limited, waiting 4.0s before retry 1/2
+2025-09-15 19:22:54,190 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:22:55,221 - utils - ERROR - Error fetching options chain for AMD: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:22:57,263 - utils - WARNING - Rate limited, waiting 3.5s before retry 1/2
+2025-09-15 19:23:00,837 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:01,818 - utils - ERROR - Error fetching options chain for ABNB: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:23:03,885 - utils - WARNING - Rate limited, waiting 3.2s before retry 1/2
+2025-09-15 19:23:07,134 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:07,134 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:23:08,155 - utils - ERROR - Error fetching options chain for GOOGL: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:23:08,155 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:23:08,157 - utils - INFO - Generated mock options data for GOOGL: 10 calls, 10 puts
+2025-09-15 19:23:10,225 - utils - WARNING - Rate limited, waiting 3.5s before retry 1/2
+2025-09-15 19:23:13,771 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:14,776 - utils - ERROR - Error fetching options chain for GOOG: Expecting value: line 1 column 1 (char 0)
+2025-09-15 19:23:16,838 - utils - WARNING - Rate limited, waiting 3.8s before retry 1/2
+2025-09-15 19:23:20,756 - utils - ERROR - Error fetching stock info for ADBE: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ADBE?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:20,757 - utils - INFO - Using mock data for ADBE
+2025-09-15 19:23:21,741 - utils - WARNING - Rate limited, waiting 3.6s before retry 1/2
+2025-09-15 19:23:25,341 - utils - ERROR - Error fetching stock info for AMD: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/AMD?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:26,361 - utils - WARNING - Rate limited, waiting 3.3s before retry 1/2
+2025-09-15 19:23:29,691 - utils - ERROR - Error fetching stock info for ABNB: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/ABNB?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:30,696 - utils - WARNING - Rate limited, waiting 3.4s before retry 1/2
+2025-09-15 19:23:34,158 - utils - ERROR - Error fetching stock info for GOOGL: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOGL?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
+2025-09-15 19:23:34,158 - utils - INFO - Using mock data for GOOGL
+2025-09-15 19:23:35,164 - utils - WARNING - Rate limited, waiting 3.4s before retry 1/2
+2025-09-15 19:23:38,586 - utils - ERROR - Error fetching stock info for GOOG: 429 Client Error: Too Many Requests for url: https://query2.finance.yahoo.com/v10/finance/quoteSummary/GOOG?modules=summaryProfile%2CfinancialData%2CquoteType%2CdefaultKeyStatistics%2CassetProfile%2CsummaryDetail&ssl=true
